@@ -31,7 +31,7 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
-        if age => 16)
+        if age >= 16
         can drive = true;
         else 
         canDrive = false;
@@ -57,9 +57,12 @@ public class Employee{
         System.out.println("John Deere has received a wire transfer of " + paidSalary + " CAD"
     }
     
+    /*
+     *  Question 11.
+     */
     private String changeName(String newName){
         fullname = newName;
         return(fullname);
     }
-    }
 }
+    
