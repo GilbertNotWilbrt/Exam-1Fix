@@ -31,13 +31,13 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
-        if age >= 16
+        if age >= 16{
         canDrive()= true;
         else 
         canDrive()= false;
         return canDrive
     }
-    }
+}
 
     /*
      * Returns the net pay for the outstanding unpaid hours
