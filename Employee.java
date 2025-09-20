@@ -46,10 +46,11 @@ public class Employee{
     /*
      * Returns the net pay for the outstanding unpaid hours
      */
-    private double calculatePay(){
-        totalSalary = unpaidHours * hourlyWage;
-        taxesAndDeduction = 0.3;
-        return(totalSalary * taxesAndDeduction);
+    public double calculatePay(){
+        double grossPay = unpaidHours * hourlyWage;
+        double taxRate = 0.3;
+        double netPay = grossPay - (grossPay * taxRate);
+        return netPay;
     }
 
     /*
@@ -60,14 +61,7 @@ public class Employee{
         unpaidHours = 0;
         System.out.println("John Deere has received a wire transfer of " + paidSalary + " CAD");
     }
-    
-    /*
-     *  Question 11..
-     */
-    private String changeName(String newName){
-        fullname = newName;
-        return(fullname);
-    }
+
     
    /*
      *  Question 11..
