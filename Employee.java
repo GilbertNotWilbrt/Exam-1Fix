@@ -32,14 +32,14 @@ public class Employee{
     public boolean canDrive(){
         int age = calculateAge(2025);
         if (age >= 16){
-        System.out.println("You can drive")
-        return false
+        System.out.println("You can drive");
+        return true;
     }
         else
         {
-        canDrive()= false;
+        System.out.println("You cannot drive");
+        return false;
     }
-        return canDrive();
     }
 
 
@@ -69,12 +69,13 @@ public class Employee{
         return(fullname);
     }
     
-    private void changeyearOfBirth(int newyearOfBirth){
-        yearOfBirth = newyearOfBirth;
-    }
-    
-    public String getyearofBirth(){
-        return yearofBirth;
+   /*
+     *  Question 11..
+     */
+    private String changeName(String newName){
+        fullname = newName;
+        return(fullname);
     }
 }    
+
     
